@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/index.css">
+    
+    <title>Login Page</title>
+    <script src="../js/validators.js" type="module" defer></script>
+    <script src="../js/index.js" type="module" defer></script>
+    
+    
+</head>
+<body> 
+    <div class="container">
+
+        <section>
+            
+            <div class="superTexto">
+
+                <div class="SuperTitulo">  <h1>Sealth</h1> </div>
+
+                <strong>
+                    <p>O Sealth ajuda você a se conectar e </p>
+                    <p> compartilhar com as pessoas que</p>
+                    <p> fazem parte da sua vida.</p>
+                </strong>
+
+            </div>
+        </section>
+
+        
+        <div class="formulario">
+
+            <form id="meuFormulario" class="meuFormulario">
+
+                <div class="quadroInput"><input maxlength="30" placeholder="Email ou telefone"></div>
+            
+                <div class="quadroInput"><input maxlength="30" placeholder="Senha"></div>
+
+                <button class="btn-entrar">Entrar</button>
+
+                <div class="quadroLink"><a href="google.com">Esqueceu a senha? </a></div>
+                
+                <hr>
+                
+                <div class="quadro-btn-criar"><button type="button"  class="btn-criar" id="open-modal" >Criar nova conta</button></div>
+                    
+
+
+                    
+                    <div id="overlay" class="overlay"></div>
+
+
+
+            </form>
+            <dialog id="myModal" class="modal-content">
+                <div class="modal">
+                    <header>
+                        <div class="popup-header">
+                            <h3 class="popup-title">Cadastre-se</h3>
+                            <button type="button"  class="popup-btn-closed" id="closed-modal" > <img src="../image/icon/x.png" class="popup-icon" alt=""></button>
+                        </div>
+                        <p class="popup-paragrafo-header">É rápido e facil </p>
+                       
+                    
+                    </header>
+                    <form id="cadastro">
+                        <div class="container-form">
+                            <table class="popup-table">
+                                <tr><td> <div class="popup-container-input"> <input class="popup-input" placeholder="Nome" id="name"><input class="popup-input" placeholder="Sobrenome" id="lastname"></div></td></tr>
+                                
+                                <tr><td><input class="popup-input-email" placeholder="E-mail" id="email"></td></tr>
+                                <tr><td><input class="popup-input-senha"  type="password" id="password" placeholder="Senha"></td></tr>
+                                <tr><td><p class="popup-paragrafo">Data de nascimento ?</p></td></tr>
+                                <tr><td><div class="popup-container-input"><select class="popup-input-date" id="selectOptionsDay"></select><select class="popup-input-date" id="selectOptionsMonth"></select><select class="popup-input-date" id="selectOptionsYears"></select></div>
+                                <tr><td><p class="popup-paragrafo">Gênero ?</p></td></tr>   
+                                <tr><td>
+                                    <div class="popup-container-input">
+                                        <div class="popup-quadro-radio"> <p class="popup-input-paragrafo">Feminino</p> <input type="radio" class="popup-input-radio" id="radioG" value="0"> </div>
+                                        <div class="popup-quadro-radio"> <p class="popup-input-paragrafo">Masculino</p> <input type="radio" class="popup-input-radio" id="radioM" value="1"> </div>
+                                        <div class="popup-quadro-radio popup-quadro-radio-large"> <p class="popup-input-paragrafo">Personalizado</p> <input type="radio" class="popup-input-radio" id="radioP" value="2"> </div>    
+                                    </div>
+                                </td></tr>
+                                <tr><td><div class="popup-container-input"><p class="popup-paragrafo">As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. <a href="https://www.google.com.br/">Saiba mais</a></p></div></td></tr>
+                                    
+                                <tr><td><div class="popup-container-input"><p class="popup-paragrafo"> Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.google.com.br/"> Termos , Política de Privacidade</a>  e  <a href="https://www.google.com.br/"> Política de Cookies </a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.</p></div></td></tr>
+                                
+                                <tr><td><div class="quadro-btn-cadastro"><button class="btn-cadastro" type="button" id="cadastrese" > Cadastre-se </button></div></td></tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>   
+            </dialog>
+
+            
+
+            
+        </div>
+        
+
+
+    </div>
+   
+   
+
+
+    
+    
+</body>
+
+</html>
